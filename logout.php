@@ -17,3 +17,4 @@ echo "<script>
         alert('See you again!');
         document.location.href = 'index.php';
       </script>";
+?>
