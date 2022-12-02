@@ -1,0 +1,83 @@
+.main-content > section {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+form {
+  display: flex;
+}
+form section:nth-child(1) {
+  flex: 1.5;
+}
+form section:nth-child(2) {
+  flex: 1;
+  font-size: 16pt;
+}
+
+.desc a:hover > h3,
+.desc a:hover > p {
+  color: var(--font-in-black-hover);
+}
+
+form section:nth-child(2) > * {
+  margin: 10px;
+}
+
+.product {
+  display: flex;
+  border-bottom: 1px solid #00000052;
+  padding: 10px;
+}
+.product:hover {
+  border-color: black;
+}
+
+.product .img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.product input[type="checkbox"] {
+  margin: 15px;
+  width: 20px;
+}
+
+.product label {
+  width: 100%;
+  display: flex;
+}
+
+.product .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.product .desc p {
+  margin: 5px;
+  display: flex;
+}
+
+.product input[type="number"] {
+  width: 50px;
+}
+
+.product .del {
+  width: 20px;
+  height: 20px;
+
+  align-self: center;
+  background-image: url("../img/icons/delete.png");
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+  .product input[type="checkbox"] {
+    margin: 5px;
+    width: 20px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
+

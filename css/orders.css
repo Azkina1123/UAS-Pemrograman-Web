@@ -1,0 +1,71 @@
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+}
+.member th {
+  background-color: var(--black);  
+  border: 2px solid whitesmoke;
+}
+.member td {
+  background-color: #e7e9f271;
+  border: 2px solid whitesmoke;
+}
+
+.admin th {
+  background-color: var(--black);
+  border: 2px solid black;
+}
+.admin td {
+  background-color: #ffffff16;
+  border: 2px solid black;
+}
+.admin button {
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+td:nth-child(1) {
+  width: 50px;
+}
+td:nth-child(2) {
+  width: 180px;
+}
+
+.details a {
+  display: flex;
+}
+.details a:hover h3, 
+.details a:hover p {
+  color: var(--font-in-black-hover);
+}
+
+.details .img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+
+  .table {
+    overflow: scroll;
+  }
+  table {
+    width: 500px;
+  }
+
+  td, th {
+    font-size: 10pt;
+  }
+
+  table .img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+
+}

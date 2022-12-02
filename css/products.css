@@ -1,0 +1,83 @@
+.main-content h1, 
+.main-content p {
+  color: var(--font-in-black);
+}
+
+input[type="search"] {
+  width: 90%;
+  padding: 9px;
+}
+
+.main-content .products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.product {
+  width: 250px;
+  height: 300px;
+  margin: 7px;
+  padding: 10px;
+
+  border: 1px solid var(--font-in-black-hover);
+  
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  transition: 0.2s;
+}
+.product:hover {
+  transform: translate(0, -5px);
+}
+.product.black {
+  background-color: var(--black);
+  border-color: var(--font-in-black-hover);
+}
+.product.white {
+  background-color: snow;
+  border-color: var(--font-in-black-hover);
+}
+
+.product .img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+.product .desc {
+  width: 100%;
+  font-size: 10pt;
+}
+
+.admin .product * {
+  color: var(--font-in-black);
+}
+.member .product * {
+  color: var(--black);
+}
+
+
+.product .editing {
+  position: absolute;
+  width: 250px;
+
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.product button.edit,
+.product button.del {
+  margin: 10px 5px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+
+  border: 1px solid var(--black);
+}
+
+

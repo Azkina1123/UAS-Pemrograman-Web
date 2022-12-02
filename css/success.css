@@ -1,0 +1,13 @@
+section .img {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/icons/success.png");
+  opacity: 0.7;
+}
+
+section p {
+  font-size: 14pt;
+}
+section span {
+  font-size: 18pt;
+}

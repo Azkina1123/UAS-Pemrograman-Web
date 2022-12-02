@@ -1,0 +1,23 @@
+section.wrapper {
+  background-color: black;
+
+  color: var(--font-in-black);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table td {
+  padding: 5px;
+}
+
+.form-input {
+  background-color: var(--black);
+  border-color: var(--font-in-black-hover);
+  color: var(--font-in-black);
+}
+select.form-input {
+  width: 162px;
+}

@@ -1,0 +1,153 @@
+.main-content .intro {
+  background-color: black;
+  background-image: url("../img/layout/banner-bg.jpg");
+
+  height: 500px;
+
+  box-shadow: inset 0 0 10px 10px black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro .desc {
+  color: var(--font-in-black);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro .desc h1 {
+  font-size: 40pt;
+}
+.intro .desc p {
+  font-size: 14pt;
+}
+
+.main-content .preview {
+  background-color: black;
+
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: var(--font-in-black);
+}
+
+.preview .brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--black);
+  width: 100%;
+  height: 70%;
+}
+
+.brands .brand {
+  background-color: white;
+
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.brand .img {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.xiaomi .img {
+  background-image: url("../img/layout/xiaomi.jpg");
+}
+.samsung .img {
+  background-image: url("../img/layout/samsung.jpg");
+}
+.iphone .img {
+  background-image: url("../img/layout/iphone.jpg");
+}
+
+.preview .note {
+  font-size: 18pt;
+  height: 20%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .advert {
+  background-color: white;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advert .img {
+  background-image: url("../img/layout/img1.jpg");
+  width: 45%;
+  height: 90%;
+}
+
+.advert .desc {
+  width: 50%;
+  height: 90%;
+  font-size: 28pt;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.advert .btn-black {
+  margin-top: 20px;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+  .main-content .preview {
+    height: 1000px;
+  }
+  
+  .preview .brands {
+    flex-direction: column;
+    flex: 1;
+  }
+  .brands .brand {
+    margin: 20px 0;
+  }
+  .preview .note {
+    text-align: center;
+  }
+
+  .advert {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .advert .img {
+    width: 90%;
+    height: 50%;
+  }
+
+  .advert .desc {
+    width: 90%;
+    height: 40%;
+    font-size: 18pt;
+  }
+}
+
+

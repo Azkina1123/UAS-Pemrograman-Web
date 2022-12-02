@@ -1,0 +1,47 @@
+section.wrapper,
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* section.wrapper {
+  height: 400px;
+} */
+
+section.wrapper {
+
+  color: var(--black);
+  background-color: whitesmoke;
+}
+
+.box {
+  border-bottom: 2px solid var(--black);
+  border-top: 2px solid var(--black);
+  margin: 40px;
+}
+
+.box {
+  padding: 50px 40px;
+}
+.box p {
+  margin: 10px;
+}
+
+table td {
+  padding: 10px;
+}
+
+.box .btn-black {
+  padding: 8px 25px;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+
+  .box {
+    padding: 50px 20px;
+    font-size: 10pt;
+  }
+
+}

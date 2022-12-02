@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --black: #272a34;
+  --white: #f2f3f6;
+  --font-in-black: #E7E9F2;
+  --font-in-black-hover: #848dae;
+
+  --pad-left-right: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* _______________ HEADER _______________ */
+
+header {
+  background-color: black;
+  padding: 0 var(--pad-left-right);
+  height: 70px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: var(--font-in-black);
+}
+
+header .title {
+  flex: 1;
+}
+.member header .title,
+.admin header .title {
+  text-align: center;
+  width: 250px;
+}
+
+header ul {
+  list-style: none;
+  flex: 1.5;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  margin-left: 40px;
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+  header {
+    padding: 10px 30px;
+    font-size: 10pt;
+  }
+
+  header .title {
+    flex: 0.7;
+  }
+  
+  header .menu-logo {
+    background-image: url("../img/icons/menu.png");
+    width: 32px;
+    height: 32px;
+  }
+
+  header ul {
+    position: absolute;
+    background-color: black;
+
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 0;
+
+    transition: 0.3s;
+  }
+
+  header li {
+    margin: 0;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  ul a {
+    width: 100%;
+  }
+  
+  ul.nav-active {
+    height: fit-content;
+    transition: 0.3;
+  }
+
+  ul.nav-active li {
+    opacity: 1;
+  }
+}
+
+/* _______________ ADMIN _______________ */
+.admin body,
+.admin.page-wrapper,
+.admin header {
+  background-color: black;
+}
+.member body,
+.member.page-wrapper,
+.member header {
+  background-color: whitesmoke;
+}
+
+.admin.page-wrapper,
+.admin header a,
+.admin nav a,
+.admin .main-content * {
+  color: var(--font-in-black);
+}
+.member.page-wrapper,
+.member header a,
+.member nav a,
+.member .main-content * {
+  color: var(--black);
+}
+
+.admin .header-left,
+.admin header h1,
+.admin .header-right,
+.member .header-left,
+.member header h1,
+.member .header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.admin header h1,
+.member header h1 {
+  justify-content: center;
+}
+
+.admin .header-right,
+.member .header-right {
+  justify-content: flex-end;
+}
+
+.admin .header-right a,
+.member .header-right a {
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+.admin hr,
+.member hr {
+  margin: 0 30px;
+}
+
+.admin .menu,
+.member .menu {
+  padding: 20px var(--pad-left-right);
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.admin .menu a,
+.member .menu a {
+  display: flex;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+
+  .admin .menu,
+  .member .menu {
+    font-size: 10pt;
+  }
+}
+
+/* _______________ FOOTER _______________ */
+
+footer {
+  background-color: black;
+  height: 150px;
+
+  color: var(--font-in-black);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* _______________ LAYOUT _______________ */
+
+.wrapper {
+  padding: 40px var(--pad-left-right);
+}
+
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+  .wrapper {
+    padding: 40px 20px;
+  }
+
+}
+
+
+/* _______________ INPUT _______________ */
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  font-size: 12pt;
+}
+.btn.black {
+  background-color: var(--black);
+  color: var(--font-in-black);
+}
+.btn.black:hover {
+  background-color: #1c1c1c;
+}
+.btn.white {
+  background-color: whitesmoke;
+  color: var(--black);
+}
+.btn.white:hover {
+  background-color: var(--font-in-black);
+}
+
+.form-input {
+  border: 1px solid var(--black);
+  padding: 5px;
+  outline: none;
+  width: 150px;
+}
+.form-input.black {
+  background-color: var(--black);
+  border-color: var(--font-in-black-hover);
+  color: var(--font-in-black);
+}
+.form-input.white {
+  background-color: var(--font-in-black);
+  color: var(--black);
+}
+
+/* _______________ LINK _______________ */
+
+.link-black {
+  color: black;
+}
+.link-white:hover,
+.link-black:hover {
+  color: var(--font-in-black-hover);
+}
+.link-white {
+  color: var(--font-in-black);
+}
+

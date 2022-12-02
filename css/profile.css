@@ -1,0 +1,13 @@
+table {
+	width: 30%;
+}
+table td {
+	padding: 10px;
+}
+
+table td:nth-child(1) {
+	width: 100px;
+}
+table td:nth-child(2) {
+	width: 20px;
+}

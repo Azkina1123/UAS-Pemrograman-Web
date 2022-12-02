@@ -1,0 +1,19 @@
+section.wrapper {
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.wrapper h1 {
+  font-size: 28pt;
+  text-align: center;
+}
+
+@media screen and (min-width:240px) and (max-width:900px) {
+
+  .admin-menu {
+    font-size: 10pt;
+  }
+}

@@ -1,0 +1,35 @@
+.main-content {
+  background-color: whitesmoke;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section > div {
+  display: flex;
+  margin: 10px;
+  width: 200px;
+}
+
+section .img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+  display: inline-block;
+}
+
+.wa {
+  background-image: url("../img/icons/whatsapp.png");
+}
+.ig {
+  background-image: url("../img/icons/instagram.png");
+}
+.gm {
+  background-image: url("../img/icons/gmail.png");
+}
+
